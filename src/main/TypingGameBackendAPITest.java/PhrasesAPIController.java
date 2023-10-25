@@ -14,7 +14,7 @@ public class PhrasesAPIController {
     @Autowired
     private PhraseJpaRepository repository;
     @GetMapping("/")
-    public ResponseEntity<List<Phrasess>> getPhrasess() {
+    public ResponseEntity<List<Phrases>> getPhrases() {
         // ResponseEntity returns List of Jokes provide by JPA findAll()
         return new ResponseEntity<>( repository.findAll(), HttpStatus.OK);
     }
